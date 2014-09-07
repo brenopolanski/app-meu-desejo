@@ -32,10 +32,10 @@ public class SplashScreen extends Activity {
 					// Close SplashScreen
 					finish();
 					
-					// Load the MainActivity
-					Intent mainIntent = new Intent();
-					mainIntent.setClass(SplashScreen.this, MainActivity.class);
-					startActivity(mainIntent);
+					// Load the LoginActivity
+					Intent loginIntent = new Intent();
+					loginIntent.setClass(SplashScreen.this, LoginActivity.class);
+					startActivity(loginIntent);
 				}
 			}
 		};
