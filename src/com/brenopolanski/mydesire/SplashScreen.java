@@ -20,7 +20,7 @@ public class SplashScreen extends Activity {
 			public void run() {
 				try {
 					synchronized(this) {
-						// wait by 3 seconds
+						// Wait by 3 seconds
 						// or ...
 						wait(3000);
 						// ... if the user touch the screen
@@ -29,10 +29,10 @@ public class SplashScreen extends Activity {
 				} catch (InterruptedException ex) {}
 				
 				if (clickScreen) {
-					// close SplashScreen
+					// Close SplashScreen
 					finish();
 					
-					// load the MainActivity
+					// Load the MainActivity
 					Intent mainIntent = new Intent();
 					mainIntent.setClass(SplashScreen.this, MainActivity.class);
 					startActivity(mainIntent);
@@ -43,22 +43,29 @@ public class SplashScreen extends Activity {
 		splashThread.start();
 	}
 	
+	/**
+	 * Method that destroys Thread
+	 */
 	@Override
 	public void onPause() {
 		super.onPause();
 		
-		// if the user click in back button
+		// If the user click in back button
 		// the system end the Thread
 		splashThread.interrupt();
 	}
 	
+	/**
+	 * Method called when a touch screen motion event occurs
+	 * @param event - Type of event touch 
+	 */
 	@Override
 	public boolean onTouchEvent(MotionEvent event) {
 		if (event.getAction() == MotionEvent.ACTION_DOWN) {
 			synchronized(splashThread) {
 				clickScreen = true;
 				
-				// end the command wait(3000)
+				// End the command wait(3000)
 				splashThread.notifyAll();
 			}
 		}
