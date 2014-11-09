@@ -1,4 +1,6 @@
-package com.brenopolanski.mydesire;
+package com.brenopolanski.meudesejo;
+
+import com.brenopolanski.mydesire.R;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -21,7 +23,7 @@ public class MainActivity extends Activity {
 	@Override
 	public void onBackPressed() {
 		// Viewing alertDialogWebAppActivity
-		alertDialogWebAppActivity("my-desire", "Tem certeza de que deseja sair?");
+		alertDialogWebAppActivity("Meu Desejo", "Tem certeza de que deseja sair?");
 	}
 	
 	/**

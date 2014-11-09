@@ -1,4 +1,6 @@
-package com.brenopolanski.mydesire;
+package com.brenopolanski.meudesejo;
+
+import com.brenopolanski.mydesire.R;
 
 import android.app.Activity;
 import android.app.AlertDialog;

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">MyDesire</string>
+    <string name="app_name">Meu Desejo</string>
     <string name="text_main">Hello, what is your desire?</string>
     
     <string name="text_label_login">Usuário</string>
