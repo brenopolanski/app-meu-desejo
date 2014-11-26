@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <string name="app_name">Meu Desejo</string>
-    <string name="text_main">Hello, what is your desire?</string>
-    
-    <string name="text_label_login">Usuário</string>
-    <string name="text_label_password">Senha</string>
-    <string name="text_button">Entrar</string>
-
+    <string name="buscar">Buscar</string>
+    <string name="aviso">Seu desejo foi mencionado :)</string>
+    <string name="titulo">mencionou seu desejo</string>
+    <string name="usuario">Usuário</string>
+    <string name="senha">Senha</string>
+    <string name="login">Login</string>
+    <string name="Logado">Logado</string>
 </resources>
